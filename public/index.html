@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="アニメ・パイロット版『ベンチャー』。アニメーション制作 秋山翔. 編集 金山哲平"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="apple-touch-icon" href="logo156.png" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Titillium+Web&display=swap"
+            rel="stylesheet"
+        />
+
+        <style type="text/css" rel="stylesheet">
+            body {
+                margin: 0;
+                color: #ffffff;
+                background: #1c0f1d;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                overflow-x: hidden;
+                font-family: "Noto Sans JP", sans-serif;
+                font-family: "Titillium Web", sans-serif;
+
+                text-rendering: optimizeLegibility;
+                -moz-font-feature-settings: "kern=1";
+                -ms-font-feature-settings: "kern" 1;
+            }
+
+            @keyframes loadingAnimation {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.3;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .html-loading {
+                animation: loadingAnimation 1s linear infinite;
+                color: #ffffff;
+            }
+
+            @media only screen and (max-width: 768px) {
+                body {
+                    margin: 0 1em;
+                    font-size: 12px;
+                }
+            }
+
+            @media only screen and (max-width: 320px) {
+                body {
+                    margin: 0 1em;
+                    font-size: 6px;
+                }
+            }
+        </style>
+        <title>アニメ『ベンチャー』公式サイト</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+            <div class="html-loading">
+                読み込み中...
+            </div>
+        </div>
+    </body>
+</html>
