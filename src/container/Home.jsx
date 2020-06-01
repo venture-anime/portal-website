@@ -270,29 +270,9 @@ class Home extends Component {
                                 &nbsp;
                                 <FormattedMessage id="watchLatestEpisode" />
                             </MainActionLink>
-                            <SubActionLink
-                                href="https://www.youtube.com/watch?v=_w_cUYvG3x0"
-                                target="_blank"
-                            >
-                                <SubActionIcon className="material-icons">
-                                    play_circle_outline
-                                </SubActionIcon>
-                                &nbsp;
-                                <FormattedMessage id="watchPilotEpisode" />
-                            </SubActionLink>
                         </ActionWrapper>
                     </FilmTitleIconContainer>
                 </HomeContainer>
-                <BgContainer id="PilotEpisode">
-                    <AttentionGrab>
-                        <FormattedMessage id="details.pilotEpisode" />
-                    </AttentionGrab>
-                    <YouTube
-                        videoId="_w_cUYvG3x0"
-                        onReady={this.onReady}
-                        className="youtubePlayer"
-                    />
-                </BgContainer>
                 <Bg2Container>
                     <AttentionGrab>
                         <FormattedMessage id="details.introduction" />
