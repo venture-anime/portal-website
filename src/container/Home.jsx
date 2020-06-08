@@ -16,7 +16,7 @@ import { Default, Mobile } from "../component/responsive";
 
 import "./home.css";
 
-import homeVideo from "../assets/images/poster.mp4";
+import homeVideo from "../assets/videos/poster.mp4";
 import logo from "../assets/images/logo.svg";
 
 const AttentionGrab = styled.div`
