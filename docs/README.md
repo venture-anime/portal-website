@@ -18,10 +18,21 @@ You will need to perform the following on your development machine.
 
 ## Commands
 
-| Command     | Description                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| `start`     | Starts the development server. Accessible at `http://localhost:3000` |
-| `build`     | Builds the site                                                     |
-| `prettier`  | Runs prettier to automatically format your code                     |
-| `predeploy` | Builds the site and copy CNAME into build folder                    |
-| `deploy`    | Deploys to Firebase                                                 |
+| Command     | Description                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| `start`     | Starts the development server. Accessible at `http://localhost:3000`. |
+| `build`     | Builds the site.                                                      |
+| `prettier`  | Runs prettier to automatically format your code.                      |
+| `predeploy` | Builds the site and copy CNAME into build folder.                     |
+| `deploy`    | Deploys to Firebase.                                                  |
+
+## Folder structure
+
+| Folder         | Description                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| `Assets`       | Where we store our assets such as images, audio and video files.    |
+| `Components`   | Reusable components that is widely used.                            |
+| `Constants`    | Constant values that rarely changes.                                |
+| `Localisation` | Translation related folder.                                         |
+| `Pages`        | The many pages of our site.                                         |
+| `Styles`       | The place where we keep our reusable/non-component specific styles. |
