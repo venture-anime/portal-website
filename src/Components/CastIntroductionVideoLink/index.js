@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import PropTypes from "prop-types";
-import { ContainerLink } from './styled';
+import { ContainerLink } from "./styled";
 
 const CastIntroductionVideoLink = ({ href }) => {
     return (

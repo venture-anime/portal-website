@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { mainTextColour, subTextColour } from "Styles/base";
 
 const FOOTER_HEIGHT_PX = 80;
@@ -62,4 +62,4 @@ export {
     SnsBtn,
     SnsBtnImg,
     CopyrightLink,
-}
+};

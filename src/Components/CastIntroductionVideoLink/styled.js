@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { textHoverColour } from "Styles/base";
 
 const ContainerLink = styled.a`
@@ -24,6 +24,4 @@ const ContainerLink = styled.a`
     }
 `;
 
-export {
-    ContainerLink,
-};
+export { ContainerLink };

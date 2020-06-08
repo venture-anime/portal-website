@@ -1,11 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 
-import {
-    Bg2Container,
-    BgContainer,
-    DefaultLinkBtn
-} from "Styles/base";
+import { Bg2Container, BgContainer, DefaultLinkBtn } from "Styles/base";
 import { ABOUT_PATH } from "Constants/routes";
 import { Default, Mobile } from "Components/responsive";
 
@@ -29,7 +25,7 @@ import {
     VideoBackdrop,
     VideoBg,
     HomeContainer,
-} from './styled';
+} from "./styled";
 
 import homeVideo from "Assets/videos/poster.mp4";
 import logo from "Assets/images/logo.svg";

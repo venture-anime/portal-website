@@ -5,7 +5,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Navigation from "Components/Navigation";
 import Footer from "Components/Footer";
 
-import { routes } from 'Constants/routes';
+import { routes } from "Constants/routes";
 
 const AppContainer = styled.div`
     display: flex;

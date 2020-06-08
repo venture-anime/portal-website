@@ -11,7 +11,7 @@ import {
     UnclickableCast,
     CastDetailsWrapper,
     Cast,
-} from './styled';
+} from "./styled";
 
 const Staff = () => (
     <StaffContainer>

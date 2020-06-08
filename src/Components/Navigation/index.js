@@ -16,7 +16,7 @@ import {
     HamburguerContainer,
     MobileContainer,
     Padding,
-} from './styled';
+} from "./styled";
 
 const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
     const [isMobileNavVisible, setMobileNavVisible] = useState(false);

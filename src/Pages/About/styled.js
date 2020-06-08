@@ -1,11 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import {
-    Container,
-    NAV_HEIGHT_PX,
-    subTextColour,
-    bgColour,
-} from "Styles/base";
+import { Container, NAV_HEIGHT_PX, subTextColour, bgColour } from "Styles/base";
 
 const characterContainerBgColour = "#e2d8e3";
 const characterContainerTextColour = bgColour;

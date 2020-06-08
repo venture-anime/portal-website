@@ -5,7 +5,7 @@ import {
     CHARACTER_IMAGES,
     CHARACTER_VOICE,
     CHARACTERS,
-} from 'Constants/character';
+} from "Constants/character";
 import {
     CharacterLabel,
     CharacterListContainer,
@@ -23,7 +23,7 @@ import {
     SetDesignLabel,
     SetDesignImage,
     CharacterProfilesContainer,
-} from './styled';
+} from "./styled";
 import { BgContainer } from "Styles/base";
 
 import set from "Assets/images/set.jpg";

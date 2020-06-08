@@ -13,7 +13,7 @@ import {
     SnsBtn,
     SnsBtnImg,
     CopyrightLink,
-} from './styled';
+} from "./styled";
 
 const Footer = ({ intl }) => (
     <FooterContainer>

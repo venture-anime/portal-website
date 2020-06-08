@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-    Container,
-    mainTextColour,
-    subTextColour,
-} from "Styles/base";
+import { Container, mainTextColour, subTextColour } from "Styles/base";
 
 const staffBgColour = "#000000";
 
