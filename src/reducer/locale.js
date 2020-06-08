@@ -1,5 +1,5 @@
-import { LOCALE_EN, LOCALE_JA } from "../localisation";
-import { getBrowserLocale } from "../localisation/utils";
+import { LOCALE_EN, LOCALE_JA } from "Localisation";
+import { getBrowserLocale } from "Localisation/utils";
 import { TOGGLE_LANGUAGE } from "../action/locale";
 
 const locale = (state = getBrowserLocale(), action) => {

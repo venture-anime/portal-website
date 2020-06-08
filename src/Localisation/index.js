@@ -1,11 +1,10 @@
 import { connect } from "react-redux";
 import { IntlProvider } from "react-intl";
 
-import enMessages from "./en.json";
-import jaMessages from "./ja.json";
+import enMessages from "./translations/en.json";
+import jaMessages from "./translations/ja.json";
 
 // Constants
-
 export const LOCALE_STORAGE_KEY = "REMEMBER_LOCALE";
 
 export const LOCALE_JA = "ja";
