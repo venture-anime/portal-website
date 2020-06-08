@@ -4,10 +4,10 @@ import { FormattedMessage, injectIntl } from "react-intl";
 
 import { mainTextColour, subTextColour } from "./meta";
 
-import facebook from "../assets/images/sns/facebook.png";
-import instagram from "../assets/images/sns/instagram.png";
-import twitter from "../assets/images/sns/twitter.png";
-import reddit from "../assets/images/sns/reddit.png";
+import facebook from "../Assets/images/sns/facebook.png";
+import instagram from "../Assets/images/sns/instagram.png";
+import twitter from "../Assets/images/sns/twitter.png";
+import reddit from "../Assets/images/sns/reddit.png";
 
 const FOOTER_HEIGHT_PX = 80;
 export const footerBgColour = "#130914";

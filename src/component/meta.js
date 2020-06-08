@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import background_1 from "../assets/images/background/background_1.jpg";
-import background_2 from "../assets/images/background/background_2.jpg";
+import background_1 from "../Assets/images/background/background_1.jpg";
+import background_2 from "../Assets/images/background/background_2.jpg";
 
 // 色
 

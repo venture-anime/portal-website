@@ -9,16 +9,16 @@ import {
     bgColour,
 } from "../component/meta";
 
-import ren from "../assets/images/character/ren.jpg";
-import mayu from "../assets/images/character/mayu.jpg";
-import dan from "../assets/images/character/dan.jpg";
-import lucas from "../assets/images/character/lucas.jpg";
-import mikaela from "../assets/images/character/mikaela.jpg";
-import hiro from "../assets/images/character/hiro.jpg";
-import chloe from "../assets/images/character/chloe.jpg";
-import meiko from "../assets/images/character/meiko.jpg";
-import sanosuke from "../assets/images/character/sanosuke.jpg";
-import set from "../assets/images/set.jpg";
+import ren from "../Assets/images/character/ren.jpg";
+import mayu from "../Assets/images/character/mayu.jpg";
+import dan from "../Assets/images/character/dan.jpg";
+import lucas from "../Assets/images/character/lucas.jpg";
+import mikaela from "../Assets/images/character/mikaela.jpg";
+import hiro from "../Assets/images/character/hiro.jpg";
+import chloe from "../Assets/images/character/chloe.jpg";
+import meiko from "../Assets/images/character/meiko.jpg";
+import sanosuke from "../Assets/images/character/sanosuke.jpg";
+import set from "../Assets/images/set.jpg";
 import { Default, Mobile } from "../component/responsive";
 
 const characterContainerBgColour = "#e2d8e3";

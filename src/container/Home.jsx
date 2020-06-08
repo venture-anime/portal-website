@@ -16,8 +16,8 @@ import { Default, Mobile } from "../component/responsive";
 
 import "./home.css";
 
-import homeVideo from "../assets/videos/poster.mp4";
-import logo from "../assets/images/logo.svg";
+import homeVideo from "../Assets/videos/poster.mp4";
+import logo from "../Assets/images/logo.svg";
 
 const AttentionGrab = styled.div`
     font-size: 3em;
