@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import styled, { keyframes } from "styled-components";
-import YouTube from "react-youtube";
 
 import {
     Bg2Container,
@@ -17,8 +16,8 @@ import { Default, Mobile } from "../component/responsive";
 
 import "./home.css";
 
-import homeVideo from "../img/poster.mp4";
-import logo from "../img/logo.svg";
+import homeVideo from "../assets/images/poster.mp4";
+import logo from "../assets/images/logo.svg";
 
 const AttentionGrab = styled.div`
     font-size: 3em;

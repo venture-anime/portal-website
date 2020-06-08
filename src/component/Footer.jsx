@@ -4,10 +4,10 @@ import { FormattedMessage, injectIntl } from "react-intl";
 
 import { mainTextColour, subTextColour } from "./meta";
 
-import fb from "../img/sns/fb.png";
-import twitter from "../img/sns/twitter.png";
-import ig from "../img/sns/ig.png";
-import reddit from "../img/sns/reddit.png";
+import facebook from "../assets/images/sns/facebook.png";
+import instagram from "../assets/images/sns/instagram.png";
+import twitter from "../assets/images/sns/twitter.png";
+import reddit from "../assets/images/sns/reddit.png";
 
 const FOOTER_HEIGHT_PX = 80;
 export const footerBgColour = "#130914";
@@ -74,7 +74,7 @@ const Footer = ({ intl }) => (
                     href={intl.formatMessage({ id: "footer.facebookLink" })}
                     target="_blank"
                 >
-                    <SnsBtnImg src={fb} />
+                    <SnsBtnImg src={facebook} />
                 </SnsBtn>
                 <SnsBtn
                     href={intl.formatMessage({ id: "footer.twitterLink" })}
@@ -86,7 +86,7 @@ const Footer = ({ intl }) => (
                     href={intl.formatMessage({ id: "footer.instagramLink" })}
                     target="_blank"
                 >
-                    <SnsBtnImg src={ig} />
+                    <SnsBtnImg src={instagram} />
                 </SnsBtn>
                 <SnsBtn
                     href="https://reddit.com/r/ventureanime"

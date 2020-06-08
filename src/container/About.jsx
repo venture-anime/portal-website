@@ -9,16 +9,16 @@ import {
     bgColour,
 } from "../component/meta";
 
-import ren from "../img/ren.jpg";
-import mayu from "../img/mayu.jpg";
-import dan from "../img/dan.jpg";
-import lucas from "../img/lucas.jpg";
-import mikaela from "../img/mikaela.jpg";
-import hiro from "../img/hiro.jpg";
-import chloe from "../img/chloe.jpg";
-import meiko from "../img/meiko.jpg";
-import sanosuke from "../img/sanosuke.jpg";
-import set from "../img/set.jpg";
+import ren from "../assets/images/character/ren.jpg";
+import mayu from "../assets/images/character/mayu.jpg";
+import dan from "../assets/images/character/dan.jpg";
+import lucas from "../assets/images/character/lucas.jpg";
+import mikaela from "../assets/images/character/mikaela.jpg";
+import hiro from "../assets/images/character/hiro.jpg";
+import chloe from "../assets/images/character/chloe.jpg";
+import meiko from "../assets/images/character/meiko.jpg";
+import sanosuke from "../assets/images/character/sanosuke.jpg";
+import set from "../assets/images/set.jpg";
 import { Default, Mobile } from "../component/responsive";
 
 const characterContainerBgColour = "#e2d8e3";
