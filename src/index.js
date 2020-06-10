@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import ConnectedIntlProvider, { DEFAULT_LOCALE } from "./localisation";
+import ConnectedIntlProvider, { DEFAULT_LOCALE } from "Localisation";
 import store from "./reducer";
 import { BrowserRouter } from "react-router-dom";
 

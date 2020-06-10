@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import bg from "../img/bg.jpg";
-import bg2 from "../img/bg2.jpg";
+import background_1 from "Assets/images/background/background_1.jpg";
+import background_2 from "Assets/images/background/background_2.jpg";
 
 // 色
 
@@ -31,14 +31,14 @@ export const Container = styled.div`
 `;
 
 export const BgContainer = styled(Container)`
-    background-image: url(${bg});
+    background-image: url(${background_1});
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: inherit;
 `;
 
 export const Bg2Container = styled(BgContainer)`
-    background-image: url(${bg2});
+    background-image: url(${background_2});
 `;
 
 //　ボタン
