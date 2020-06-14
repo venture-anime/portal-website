@@ -5,11 +5,9 @@ import ContainerLink from './styled';
 
 const CastIntroductionVideoLink = ({ href }) => (
     <ContainerLink href={href} target="_blank">
-        [
         <i className="material-icons">play_circle_outline</i>
         &nbsp;
         <FormattedMessage id="cast.introductionVideo" />
-        ]
     </ContainerLink>
 );
 

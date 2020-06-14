@@ -11,8 +11,9 @@
         "ecmaVersion": 11,
         "sourceType": "module"
     },
-    "plugins": ["react"],
+    "plugins": ["react", "prettier"],
     "rules": {
+        "prettier/prettier": ["error"],
         "react/forbid-prop-types": 0,
         "react/require-default-props": 0,
         "react/jsx-indent": ["error", 4],

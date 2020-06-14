@@ -66,8 +66,7 @@ const About = () => (
                                     />
                                 </Physical>
                                 <div>
-                                    CV.
-                                    {' '}
+                                    {'CV. '}
                                     <FormattedMessage
                                         id={CHARACTER_VOICE[characterId]}
                                     />
