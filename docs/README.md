@@ -25,7 +25,7 @@ You will need to perform the following on your development machine.
 | `prettier`  | Runs prettier to automatically format your code.                      |
 | `predeploy` | Builds the site and copy CNAME into build folder.                     |
 | `deploy`    | Deploys to Firebase.                                                  |
-| `lint`      | Runs linter.                                                          |
+| `lint-fix`  | Runs linter and prettier.                                             |
 
 ## Folder structure
 

@@ -262,4 +262,5 @@ const Staff = () => (
         </Section>
     </StaffContainer>
 );
+
 export default Staff;
