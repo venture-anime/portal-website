@@ -1,13 +1,3 @@
-import React, { Component } from "react";
-
-class Rewards extends Component {
-    componentDidMount() {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    }
-
-    render() {
-        return <div />;
-    }
-}
+import Rewards from './Rewards';
 
 export default Rewards;
