@@ -53,7 +53,7 @@ const Footer = ({ intl }) => (
 );
 
 Footer.propTypes = {
-    intl: PropTypes.string,
+    intl: PropTypes.object,
 };
 
 export default injectIntl(Footer);
