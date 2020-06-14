@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import { TextLinkBtn } from "Styles/base";
-import { ABOUT_PATH, CAST_PATH, MAIN_PATH } from "Constants/routes";
+import { paths } from "Constants/routes";
 import { dispatchToggleLanguage } from "../../action/locale";
 import { Default, Mobile } from "../Responsive";
 import {
@@ -39,19 +39,19 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                 <MobileContainer>
                     <BtnContainer>
                         <TextLinkBtn
-                            to={MAIN_PATH}
+                            to={paths.index}
                             onClick={toggleMobileMenuVisibility}
                         >
                             <FormattedMessage id="nav.home" />
                         </TextLinkBtn>
                         <TextLinkBtn
-                            to={ABOUT_PATH}
+                            to={paths.about}
                             onClick={toggleMobileMenuVisibility}
                         >
                             <FormattedMessage id="nav.about" />
                         </TextLinkBtn>
                         <TextLinkBtn
-                            to={CAST_PATH}
+                            to={paths.staff}
                             onClick={toggleMobileMenuVisibility}
                         >
                             <FormattedMessage id="nav.characters" />
@@ -79,7 +79,7 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
             <Container>
                 <BtnContainer>
                     <FilmTitleIconContainer>
-                        <TextLinkBtn to={MAIN_PATH}>
+                        <TextLinkBtn to={paths.index}>
                             <MainFilmTitle>
                                 <FormattedMessage id="title" />
                             </MainFilmTitle>
@@ -91,10 +91,10 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                 </BtnContainer>
 
                 <BtnContainer>
-                    <TextLinkBtn to={ABOUT_PATH}>
+                    <TextLinkBtn to={paths.about}>
                         <FormattedMessage id="nav.about" />
                     </TextLinkBtn>
-                    <TextLinkBtn to={CAST_PATH}>
+                    <TextLinkBtn to={paths.staff}>
                         <FormattedMessage id="nav.characters" />
                     </TextLinkBtn>
                     <ToggleBtn onClick={toggleLanguage}>

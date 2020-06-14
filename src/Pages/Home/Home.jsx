@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 import { Bg2Container, BgContainer, DefaultLinkBtn } from "Styles/base";
-import { ABOUT_PATH } from "Constants/routes";
+import { paths } from "Constants/routes";
 import { Default, Mobile } from "Components/Responsive";
 import {
     AttentionGrab,
@@ -122,7 +122,7 @@ const Home = () => (
                 <FormattedMessage id="details.story3" />
             </Details>
             <NextBtnContainer>
-                <DefaultLinkBtn to={ABOUT_PATH}>
+                <DefaultLinkBtn to={paths.about}>
                     <FormattedMessage id="details.viewMore" />
                 </DefaultLinkBtn>
             </NextBtnContainer>
