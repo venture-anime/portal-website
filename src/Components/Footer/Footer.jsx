@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage, injectIntl } from "react-intl";
+import { FormattedMessage, injectIntl } from 'react-intl';
 
-import facebook from "Assets/images/sns/facebook.png";
-import instagram from "Assets/images/sns/instagram.png";
-import twitter from "Assets/images/sns/twitter.png";
-import reddit from "Assets/images/sns/reddit.png";
+import facebook from 'Assets/images/sns/facebook.png';
+import instagram from 'Assets/images/sns/instagram.png';
+import twitter from 'Assets/images/sns/twitter.png';
+import reddit from 'Assets/images/sns/reddit.png';
 
 import {
     FooterContainer,
@@ -14,7 +14,7 @@ import {
     SnsBtn,
     SnsBtnImg,
     CopyrightLink,
-} from "./styled";
+} from './styled';
 
 const Footer = ({ intl }) => (
     <FooterContainer>
@@ -24,19 +24,19 @@ const Footer = ({ intl }) => (
             </CopyrightLink>
             <SnsBtnContainer>
                 <SnsBtn
-                    href={intl.formatMessage({ id: "footer.facebookLink" })}
+                    href={intl.formatMessage({ id: 'footer.facebookLink' })}
                     target="_blank"
                 >
                     <SnsBtnImg src={facebook} />
                 </SnsBtn>
                 <SnsBtn
-                    href={intl.formatMessage({ id: "footer.twitterLink" })}
+                    href={intl.formatMessage({ id: 'footer.twitterLink' })}
                     target="_blank"
                 >
                     <SnsBtnImg src={twitter} />
                 </SnsBtn>
                 <SnsBtn
-                    href={intl.formatMessage({ id: "footer.instagramLink" })}
+                    href={intl.formatMessage({ id: 'footer.instagramLink' })}
                     target="_blank"
                 >
                     <SnsBtnImg src={instagram} />

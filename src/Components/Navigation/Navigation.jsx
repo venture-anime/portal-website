@@ -1,11 +1,11 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from "react-redux";
-import { FormattedMessage } from "react-intl";
-import { TextLinkBtn } from "Styles/base";
-import { paths } from "Constants/routes";
-import { dispatchToggleLanguage } from "../../action/locale";
-import { Default, Mobile } from "../Responsive";
+import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
+import { TextLinkBtn } from 'Styles/base';
+import paths from 'Constants/paths';
+import { dispatchToggleLanguage } from '../../action/locale';
+import { Default, Mobile } from '../Responsive';
 import {
     Container,
     FilmTitleIconContainer,
@@ -17,7 +17,7 @@ import {
     HamburguerContainer,
     MobileContainer,
     Padding,
-} from "./styled";
+} from './styled';
 
 const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
     const [isMobileNavVisible, setMobileNavVisible] = useState(false);
@@ -106,10 +106,10 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
     );
 
     return (
-        <Fragment>
+        <>
             {mobileView}
             {defaultView}
-        </Fragment>
+        </>
     );
 };
 

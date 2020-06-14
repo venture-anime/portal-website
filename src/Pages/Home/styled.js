@@ -1,11 +1,11 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 import {
     bgColour,
     Container,
     mainTextColour,
     subTextColour,
-} from "Styles/base";
+} from 'Styles/base';
 
 const AttentionGrab = styled.div`
     font-size: 3em;

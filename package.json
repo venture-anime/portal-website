@@ -5,7 +5,6 @@
     "private": true,
     "dependencies": {
         "core-js": "3.2.1",
-        "firebase-tools": "^7.12.1",
         "prop-types": "15.7.2",
         "react": "16.9.0",
         "react-app-polyfill": "1.0.2",
@@ -21,6 +20,13 @@
         "styled-components": "4.3.2"
     },
     "devDependencies": {
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.21.2",
+        "eslint-plugin-react": "^7.20.0",
+        "firebase-tools": "^8.4.2",
         "gh-pages": "2.0.1",
         "prettier": "1.18.2"
     },
@@ -30,6 +36,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "prettier": "prettier --config .prettierrc --write '**/*.{js,jsx,css,md,json}' '!{CHANGELOG.md,**/*.min.js,public/**,\\.cache/**}'",
+        "lint": "eslint --ext .js,.jsx ./src/ --fix",
         "predeploy": "npm run build",
         "deploy": "npm run build && firebase deploy"
     },

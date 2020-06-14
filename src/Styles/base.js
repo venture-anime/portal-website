@@ -1,20 +1,20 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import background_1 from "Assets/images/background/background_1.jpg";
-import background_2 from "Assets/images/background/background_2.jpg";
+import background1 from 'Assets/images/background/background_1.jpg';
+import background2 from 'Assets/images/background/background_2.jpg';
 
 // 色
 
-export const bgColour = "#1c0f1d";
+export const bgColour = '#1c0f1d';
 
-export const mainTextColour = "#ffffff";
-export const textHoverColour = "#b395c0";
-export const subTextColour = "#cac7bc";
+export const mainTextColour = '#ffffff';
+export const textHoverColour = '#b395c0';
+export const subTextColour = '#cac7bc';
 
 //
 
-export const NAV_HEIGHT_PX = "80";
+export const NAV_HEIGHT_PX = '80';
 
 // container
 
@@ -31,17 +31,17 @@ export const Container = styled.div`
 `;
 
 export const BgContainer = styled(Container)`
-    background-image: url(${background_1});
+    background-image: url(${background1});
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: inherit;
 `;
 
 export const Bg2Container = styled(BgContainer)`
-    background-image: url(${background_2});
+    background-image: url(${background2});
 `;
 
-//　ボタン
+// ボタン
 
 export const TextBtn = styled.button`
     background: none;

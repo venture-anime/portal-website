@@ -1,11 +1,15 @@
-import React, { Fragment } from "react";
-import { FormattedMessage } from "react-intl";
+import React, { Fragment } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import {
     CHARACTER_IMAGES,
     CHARACTER_VOICE,
     CHARACTERS,
-} from "Constants/character";
+} from 'Constants/character';
+import { BgContainer } from 'Styles/base';
+
+import set from 'Assets/images/set.jpg';
+import { Default, Mobile } from 'Components/Responsive.jsx';
 import {
     CharacterLabel,
     CharacterListContainer,
@@ -23,21 +27,17 @@ import {
     SetDesignLabel,
     SetDesignImage,
     CharacterProfilesContainer,
-} from "./styled";
-import { BgContainer } from "Styles/base";
-
-import set from "Assets/images/set.jpg";
-import { Default, Mobile } from "Components/Responsive";
+} from './styled';
 
 const About = () => (
-    <Fragment>
+    <>
         <CharacterProfilesContainer>
             <CharacterLabel>
                 <FormattedMessage id="about.characters" />
             </CharacterLabel>
-            {CHARACTERS.map((characterId, idx) => {
+            {CHARACTERS.map(characterId => {
                 const content = (
-                    <Fragment>
+                    <>
                         <CharacterImage
                             alt={characterId}
                             src={CHARACTER_IMAGES[characterId]}
@@ -66,7 +66,8 @@ const About = () => (
                                     />
                                 </Physical>
                                 <div>
-                                    CV.{" "}
+                                    CV.
+                                    {' '}
                                     <FormattedMessage
                                         id={CHARACTER_VOICE[characterId]}
                                     />
@@ -74,9 +75,7 @@ const About = () => (
                             </CharacterProfileSection>
                             <CharacterProfileSection>
                                 <ProfileLabel>
-                                    <FormattedMessage
-                                        id={`character.background`}
-                                    />
+                                    <FormattedMessage id="character.background" />
                                 </ProfileLabel>
                                 <ProfileDetails>
                                     <FormattedMessage
@@ -86,9 +85,7 @@ const About = () => (
                             </CharacterProfileSection>
                             <CharacterProfileSection>
                                 <ProfileLabel>
-                                    <FormattedMessage
-                                        id={`character.reasonForApplication`}
-                                    />
+                                    <FormattedMessage id="character.reasonForApplication" />
                                 </ProfileLabel>
                                 <ProfileDetails>
                                     <FormattedMessage
@@ -99,9 +96,7 @@ const About = () => (
                             <MultiSectionContainer>
                                 <CharacterProfileSection>
                                     <ProfileLabel>
-                                        <FormattedMessage
-                                            id={`character.hobbies`}
-                                        />
+                                        <FormattedMessage id="character.hobbies" />
                                     </ProfileLabel>
                                     <ProfileDetails>
                                         <FormattedMessage
@@ -111,9 +106,7 @@ const About = () => (
                                 </CharacterProfileSection>
                                 <CharacterProfileSection>
                                     <ProfileLabel>
-                                        <FormattedMessage
-                                            id={`character.otherInfo`}
-                                        />
+                                        <FormattedMessage id="character.otherInfo" />
                                     </ProfileLabel>
                                     <ProfileDetails>
                                         <FormattedMessage
@@ -123,7 +116,7 @@ const About = () => (
                                 </CharacterProfileSection>
                             </MultiSectionContainer>
                         </CharacterProfile>
-                    </Fragment>
+                    </>
                 );
 
                 return (
@@ -148,7 +141,7 @@ const About = () => (
             </SetDesignLabel>
             <SetDesignImage src={set} />
         </BgContainer>
-    </Fragment>
+    </>
 );
 
 export default About;

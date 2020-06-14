@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Rewards extends Component {
     componentDidMount() {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     }
 
     render() {

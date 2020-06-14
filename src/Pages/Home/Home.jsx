@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
-import { FormattedMessage } from "react-intl";
-import { Bg2Container, BgContainer, DefaultLinkBtn } from "Styles/base";
-import { paths } from "Constants/routes";
-import { Default, Mobile } from "Components/Responsive";
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import { Bg2Container, BgContainer, DefaultLinkBtn } from 'Styles/base';
+import paths from 'Constants/paths';
+import { Default, Mobile } from 'Components/Responsive.jsx';
+import homeVideo from 'Assets/videos/poster.mp4';
+import logo from 'Assets/images/logo.svg';
 import {
     AttentionGrab,
     Details,
@@ -21,12 +23,10 @@ import {
     VideoBackdrop,
     VideoBg,
     HomeContainer,
-} from "./styled";
-import homeVideo from "Assets/videos/poster.mp4";
-import logo from "Assets/images/logo.svg";
+} from './styled';
 
 const Home = () => (
-    <Fragment>
+    <>
         <VideoBackdrop>&nbsp;</VideoBackdrop>
         <VideoBg muted autoPlay playsInline>
             <source src={homeVideo} type="video/mp4" />
@@ -127,7 +127,7 @@ const Home = () => (
                 </DefaultLinkBtn>
             </NextBtnContainer>
         </BgContainer>
-    </Fragment>
+    </>
 );
 
 export default Home;

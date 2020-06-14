@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Route, Switch, withRouter } from "react-router-dom";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
-import Navigation from "Components/Navigation";
-import Footer from "Components/Footer";
+import Navigation from 'Components/Navigation';
+import Footer from 'Components/Footer';
 
-import { routes } from "Constants/routes";
+import routes from 'Constants/routes';
 
 const AppContainer = styled.div`
     display: flex;
@@ -16,7 +17,9 @@ const AppContainer = styled.div`
 
 class App extends Component {
     componentDidUpdate(prevProps) {
-        if (this.props.location !== prevProps.location) {
+        const { location } = this.props;
+
+        if (location !== prevProps.location) {
             window.scrollTo(0, 0);
         }
     }
@@ -40,5 +43,9 @@ class App extends Component {
         );
     }
 }
+
+App.propTypes = {
+    location: PropTypes.string,
+};
 
 export default withRouter(App);

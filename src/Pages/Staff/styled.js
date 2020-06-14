@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Container, mainTextColour, subTextColour } from "Styles/base";
+import styled from 'styled-components';
+import { Container, mainTextColour, subTextColour } from 'Styles/base';
 
-const staffBgColour = "#000000";
+const staffBgColour = '#000000';
 
 const StaffContainer = styled(Container)`
     background: ${staffBgColour};
