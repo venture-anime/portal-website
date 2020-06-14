@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl } from "react-intl";
 
 import facebook from "Assets/images/sns/facebook.png";
@@ -50,5 +51,9 @@ const Footer = ({ intl }) => (
         </FooterContent>
     </FooterContainer>
 );
+
+Footer.propTypes = {
+    intl: PropTypes.string,
+};
 
 export default injectIntl(Footer);

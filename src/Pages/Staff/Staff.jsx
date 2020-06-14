@@ -1,7 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import CastIntroductionVideoLink from "Components/CastIntroductionVideoLink";
-
 import {
     StaffContainer,
     Section,

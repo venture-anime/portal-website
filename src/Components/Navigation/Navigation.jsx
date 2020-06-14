@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import { TextLinkBtn } from "Styles/base";
@@ -110,6 +111,10 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
             {defaultView}
         </Fragment>
     );
+};
+
+Navigation.propTypes = {
+    dispatchToggleLanguage: PropTypes.func,
 };
 
 const mapDispatchToProps = {
