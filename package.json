@@ -38,9 +38,6 @@
         "lint-fix": "eslint --ext .js,.jsx ./src/ --fix",
         "deploy": "npm run build && firebase deploy"
     },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
     "browserslist": {
         "production": [
             ">0.2%",
