@@ -19,7 +19,8 @@
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
         "indent": ["error", 4, { "SwitchCase": 1 }],
-        "eol-last": ["error", "always"]
+        "eol-last": ["error", "always"],
+        "camelcase": 0
     },
     "settings": {
         "import/resolver": {

@@ -1,8 +1,12 @@
+const redirect_paths = {
+    cast: '/cast',
+};
+
 const paths = {
     about: '/about',
-    staff: '/cast',
+    credits: '/credits',
     rewards: '/rewards',
     index: '/',
 };
 
-export default paths;
+export { redirect_paths, paths };

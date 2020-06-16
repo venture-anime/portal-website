@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Bg2Container, BgContainer, DefaultLinkBtn } from 'Styles/base';
-import paths from 'Constants/paths';
+import { paths } from 'Constants/paths';
 import { Default, Mobile } from 'Components/Responsive.jsx';
 import homeVideo from 'Assets/videos/poster.mp4';
 import logo from 'Assets/images/logo.svg';

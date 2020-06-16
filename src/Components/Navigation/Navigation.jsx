@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { TextLinkBtn } from 'Styles/base';
-import paths from 'Constants/paths';
+import { paths } from 'Constants/paths';
 import { dispatchToggleLanguage } from '../../action/locale';
 import { Default, Mobile } from '../Responsive';
 import {
@@ -51,7 +51,7 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                             <FormattedMessage id="nav.about" />
                         </TextLinkBtn>
                         <TextLinkBtn
-                            to={paths.staff}
+                            to={paths.credits}
                             onClick={toggleMobileMenuVisibility}
                         >
                             <FormattedMessage id="nav.characters" />
@@ -94,7 +94,7 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                     <TextLinkBtn to={paths.about}>
                         <FormattedMessage id="nav.about" />
                     </TextLinkBtn>
-                    <TextLinkBtn to={paths.staff}>
+                    <TextLinkBtn to={paths.credits}>
                         <FormattedMessage id="nav.characters" />
                     </TextLinkBtn>
                     <ToggleBtn onClick={toggleLanguage}>

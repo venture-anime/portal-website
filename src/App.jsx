@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Route, Switch, withRouter } from 'react-router-dom';
-
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import Navigation from 'Components/Navigation';
 import Footer from 'Components/Footer';
-
-import routes from 'Constants/routes';
+import { redirect_routes, routes } from 'Constants/routes';
 
 const AppContainer = styled.div`
     display: flex;
@@ -29,6 +27,9 @@ class App extends Component {
             <AppContainer>
                 <Navigation />
                 <Switch>
+                    {redirect_routes.map(({ from, to }) => (
+                        <Redirect from={from} to={to} />
+                    ))}
                     {routes.map(({ path, component, exact }) => (
                         <Route
                             exact={exact}

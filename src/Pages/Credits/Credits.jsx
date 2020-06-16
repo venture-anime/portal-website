@@ -12,7 +12,7 @@ import {
     Cast,
 } from './styled';
 
-const Staff = () => (
+const Credits = () => (
     <StaffContainer>
         <Section>
             <SectionTitle>
@@ -263,4 +263,4 @@ const Staff = () => (
     </StaffContainer>
 );
 
-export default Staff;
+export default Credits;
