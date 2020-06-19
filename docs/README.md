@@ -1,4 +1,4 @@
-![char](images/char.jpg?raw=true "char")
+![char](images/char.jpg?raw=true 'char')
 
 # アニメ「ベンチャー」公式サイト・Venture Anime Website
 
@@ -22,9 +22,9 @@ You will need to perform the following on your development machine.
 | ----------- | --------------------------------------------------------------------- |
 | `start`     | Starts the development server. Accessible at `http://localhost:3000`. |
 | `build`     | Builds the site.                                                      |
-| `prettier`  | Runs prettier to automatically format your code.                      |
-| `predeploy` | Builds the site and copy CNAME into build folder.                     |
 | `deploy`    | Deploys to Firebase.                                                  |
+| `lint`      | Runs linter.                                                          |
+| `lint-fix`  | Runs linter and prettier.                                             |
 
 ## Folder structure
 

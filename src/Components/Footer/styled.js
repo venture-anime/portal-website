@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { mainTextColour, subTextColour } from "Styles/base";
+import styled from 'styled-components';
+import { mainTextColour, subTextColour } from 'Styles/base';
 
 const FOOTER_HEIGHT_PX = 80;
-const footerBgColour = "#130914";
+const footerBgColour = '#130914';
 
 const FooterContainer = styled.div`
     height: ${FOOTER_HEIGHT_PX}px;

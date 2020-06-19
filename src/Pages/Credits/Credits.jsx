@@ -1,7 +1,6 @@
-import React from "react";
-import { FormattedMessage } from "react-intl";
-import CastIntroductionVideoLink from "Components/CastIntroductionVideoLink";
-
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import CastIntroductionVideoLink from 'Components/CastIntroductionVideoLink';
 import {
     StaffContainer,
     Section,
@@ -11,9 +10,9 @@ import {
     UnclickableCast,
     CastDetailsWrapper,
     Cast,
-} from "./styled";
+} from './styled';
 
-const Staff = () => (
+const Credits = () => (
     <StaffContainer>
         <Section>
             <SectionTitle>
@@ -98,7 +97,7 @@ const Staff = () => (
                         href="https://www.youtube.com/watch?v=DGeVQ02jmBI&list=PL_xwYIO1BOyWt_4xG0o-o5NeyQvDvibew&index=2"
                         target="_blank"
                     >
-                        [<FormattedMessage id="cast.introductionVideo" />]
+                        <FormattedMessage id="cast.introductionVideo" />
                     </CastIntroductionVideoLink>
                 </CastDetailsWrapper>
             </CastContainer>
@@ -263,4 +262,5 @@ const Staff = () => (
         </Section>
     </StaffContainer>
 );
-export default Staff;
+
+export default Credits;

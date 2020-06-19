@@ -1,18 +1,16 @@
-import Home from "Pages/Home";
-import Staff from "Pages/Staff";
-import About from "Pages/About";
-import Rewards from "Pages/Rewards";
+import Home from 'Pages/Home';
+import Credits from 'Pages/Credits';
+import About from 'Pages/About';
+import Rewards from 'Pages/Rewards';
+import { paths, redirect_paths } from './paths';
 
-export const MAIN_PATH = "/";
-export const ABOUT_PATH = "about";
-export const CAST_PATH = "cast";
-export const REWARDS_PATH = "rewards";
+const redirect_routes = [{ from: redirect_paths.cast, to: paths.credits }];
 
 const routes = [
-    { path: `${MAIN_PATH}${ABOUT_PATH}`, component: About },
-    { path: `${MAIN_PATH}${CAST_PATH}`, component: Staff },
-    { path: `${MAIN_PATH}${REWARDS_PATH}`, component: Rewards },
-    { path: MAIN_PATH, component: Home },
+    { path: paths.about, component: About },
+    { path: paths.credits, component: Credits },
+    { path: paths.rewards, component: Rewards },
+    { path: paths.index, component: Home },
 ];
 
-export { routes };
+export { redirect_routes, routes };

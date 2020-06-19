@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { textHoverColour } from "Styles/base";
+import styled from 'styled-components';
+import { textHoverColour } from 'Styles/base';
 
 const ContainerLink = styled.a`
     font-size: 0.75em;
@@ -24,4 +24,4 @@ const ContainerLink = styled.a`
     }
 `;
 
-export { ContainerLink };
+export default ContainerLink;

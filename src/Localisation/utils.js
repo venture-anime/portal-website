@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE, languagesList, LOCALE_STORAGE_KEY } from "./index";
+import { DEFAULT_LOCALE, languagesList, LOCALE_STORAGE_KEY } from './index';
 
 export const getBrowserLocale = () => {
     const normalizeWithDefault = str => {
@@ -10,13 +10,13 @@ export const getBrowserLocale = () => {
         return DEFAULT_LOCALE;
     };
 
-    if (typeof window !== "undefined" && window.localStorage) {
+    if (typeof window !== 'undefined' && window.localStorage) {
         const savedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY);
         if (savedLocale) {
             return normalizeWithDefault(savedLocale);
         }
     }
-    if (typeof navigator !== "undefined") {
+    if (typeof navigator !== 'undefined') {
         if (navigator.languages && navigator.languages[0]) {
             return normalizeWithDefault(navigator.languages[0]);
         }
@@ -33,7 +33,7 @@ export const getBrowserLocale = () => {
 };
 
 export const saveBrowserLocale = locale => {
-    if (typeof window !== "undefined" && window.localStorage) {
+    if (typeof window !== 'undefined' && window.localStorage) {
         window.localStorage.setItem(LOCALE_STORAGE_KEY, locale);
     }
 };

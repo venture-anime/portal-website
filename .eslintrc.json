@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "prettier"],
+    "rules": {
+        "prettier/prettier": ["error"],
+        "react/forbid-prop-types": 0,
+        "react/require-default-props": 0,
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "eol-last": ["error", "always"],
+        "camelcase": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                ["Assets", "./src/Assets"],
+                ["Components", "./src/Components"],
+                ["Constants", "./src/Constants"],
+                ["Localisation", "./src/Localisation"],
+                ["Pages", "./src/Pages"],
+                ["Styles", "./src/Styles"]
+            ]
+        }
+    }
+}

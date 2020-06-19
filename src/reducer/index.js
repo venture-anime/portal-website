@@ -1,12 +1,12 @@
-import { combineReducers, createStore } from "redux";
+import { combineReducers, createStore } from 'redux';
 
-import localeReducer from "./locale";
+import localeReducer from './locale';
 
 const rootReducer = (state, action) =>
     combineReducers({
         locale: localeReducer,
     })(state, action);
-const initialState = rootReducer(undefined, { type: "" });
+const initialState = rootReducer(undefined, { type: '' });
 
 const store = createStore(rootReducer, initialState);
 
