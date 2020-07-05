@@ -117,7 +117,6 @@ const MainActionIcon = styled.i`
     font-size: 1.5em;
 `;
 
-// Unused
 const SubActionLink = styled.a`
     background: none;
     color: ${mainTextColour};
@@ -146,7 +145,6 @@ const SubActionLink = styled.a`
     }
 `;
 
-// Unused
 const SubActionIcon = styled.i`
     color: ${mainTextColour};
     font-size: 1em;
