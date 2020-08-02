@@ -108,14 +108,6 @@ const Credits = () => (
             </SectionTitle>
             <CastContainer>
                 <CastLabel>
-                    <FormattedMessage id="cast.title.prEditor" />
-                </CastLabel>
-                <UnclickableCast>
-                    <FormattedMessage id="cast.kono" />
-                </UnclickableCast>
-            </CastContainer>
-            <CastContainer>
-                <CastLabel>
                     <FormattedMessage id="cast.title.advice" />
                 </CastLabel>
                 <Cast href="https://twitter.com/rinvoice711" target="_blank">
@@ -191,14 +183,6 @@ const Credits = () => (
                     target="_blank"
                 >
                     <FormattedMessage id="cast.haraguchi" />
-                </Cast>
-            </CastContainer>
-            <CastContainer>
-                <CastLabel>
-                    <FormattedMessage id="cast.title.manager" />
-                </CastLabel>
-                <Cast href="https://twitter.com/Sakamin0417" target="_blank">
-                    <FormattedMessage id="cast.sakami" />
                 </Cast>
             </CastContainer>
             <CastContainer>
