@@ -51,10 +51,16 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                             <FormattedMessage id="nav.about" />
                         </TextLinkBtn>
                         <TextLinkBtn
-                            to={paths.credits}
+                            to={paths.episodes}
                             onClick={toggleMobileMenuVisibility}
                         >
-                            <FormattedMessage id="nav.characters" />
+                            <FormattedMessage id="nav.episodes" />
+                        </TextLinkBtn>
+                        <TextLinkBtn
+                            to={paths.blog}
+                            onClick={toggleMobileMenuVisibility}
+                        >
+                            <FormattedMessage id="nav.blog" />
                         </TextLinkBtn>
                         <ToggleBtn
                             onClick={() => {
@@ -94,8 +100,11 @@ const Navigation = ({ dispatchToggleLanguage: toggleLanguage }) => {
                     <TextLinkBtn to={paths.about}>
                         <FormattedMessage id="nav.about" />
                     </TextLinkBtn>
-                    <TextLinkBtn to={paths.credits}>
-                        <FormattedMessage id="nav.characters" />
+                    <TextLinkBtn to={paths.episodes}>
+                        <FormattedMessage id="nav.episodes" />
+                    </TextLinkBtn>
+                    <TextLinkBtn to={paths.blog}>
+                        <FormattedMessage id="nav.blog" />
                     </TextLinkBtn>
                     <ToggleBtn onClick={toggleLanguage}>
                         <FormattedMessage id="nav.changeLanguage" />
