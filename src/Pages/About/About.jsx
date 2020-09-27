@@ -6,35 +6,50 @@ import {
     CHARACTER_VOICE,
     CHARACTERS,
 } from 'Constants/character';
-import { BgContainer } from 'Styles/base';
+import { BgContainer, Header } from 'Styles/base';
 
 import set from 'Assets/images/set.jpg';
 import { Default, Mobile } from 'Components/Responsive.jsx';
 import {
-    CharacterLabel,
+    AttentionGrab,
+    CharacterImage,
     CharacterListContainer,
     CharacterListContainerMobile,
-    CharacterImage,
     CharacterProfile,
+    CharacterProfilesContainer,
     CharacterProfileSection,
+    Details,
+    Furigana,
+    JobTitle,
     MultiSectionContainer,
     Name,
-    Furigana,
     Physical,
-    JobTitle,
-    ProfileLabel,
     ProfileDetails,
-    SetDesignLabel,
+    ProfileLabel,
     SetDesignImage,
-    CharacterProfilesContainer,
+    SetDesignLabel,
 } from './styled';
 
 const About = () => (
     <>
+        <BgContainer>
+            <AttentionGrab>
+                <FormattedMessage id="details.story" />
+            </AttentionGrab>
+            <Details>
+                <FormattedMessage id="details.story1" />
+                <br />
+                <br />
+                <FormattedMessage id="details.story2" />
+                <br />
+                <br />
+                <FormattedMessage id="details.story3" />
+            </Details>
+        </BgContainer>
         <CharacterProfilesContainer>
-            <CharacterLabel>
+            <Header>
                 <FormattedMessage id="about.characters" />
-            </CharacterLabel>
+            </Header>
             {CHARACTERS.map(characterId => {
                 const content = (
                     <>

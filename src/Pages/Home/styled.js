@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import {
     bgColour,
@@ -7,23 +8,7 @@ import {
     subTextColour,
 } from 'Styles/base';
 
-const AttentionGrab = styled.div`
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: ${subTextColour};
-    text-align: center;
-`;
-
-const Details = styled.div`
-    width: 50%;
-    text-align: center;
-`;
-
-const NextBtnContainer = styled.div`
-    margin-top: 2em;
-`;
-
-const FilmTitleIconContainer = styled.div`
+export const FilmTitleIconContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,23 +18,23 @@ const FilmTitleIconContainer = styled.div`
     padding: 0.5em 2em;
 `;
 
-const Logo = styled.img`
+export const Logo = styled.img`
     width: 60vw;
     height: auto;
 `;
 
-const LogoMobile = styled.img`
+export const LogoMobile = styled.img`
     width: 90vw;
     height: auto;
 `;
 
-const SubFilmTitle = styled.div`
+export const SubFilmTitle = styled.div`
     padding: 0 1em;
     font-size: 1.35em;
     color: ${subTextColour};
 `;
 
-const CastRowContainer = styled.div`
+export const CastRowContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,7 +42,7 @@ const CastRowContainer = styled.div`
     justify-content: center;
 `;
 
-const LabeledCast = styled.div`
+export const LabeledCast = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -68,25 +53,25 @@ const LabeledCast = styled.div`
     }
 `;
 
-const CastLabel = styled.div`
+export const CastLabel = styled.div`
     color: ${subTextColour};
     font-size: 0.5em;
     margin-right: 0.5em;
 `;
 
-const Cast = styled.div`
+export const Cast = styled.div`
     font-size: 1em;
     margin-right: 1em;
 `;
 
-const ActionWrapper = styled.div`
+export const ActionWrapper = styled.div`
     margin: 2em 0;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
 `;
 
-const MainActionLink = styled.a`
+export const MainActionLink = styled(Link)`
     background: ${mainTextColour};
     color: ${bgColour};
     cursor: pointer;
@@ -112,12 +97,12 @@ const MainActionLink = styled.a`
     }
 `;
 
-const MainActionIcon = styled.i`
+export const MainActionIcon = styled.i`
     color: #ff0000;
     font-size: 1.5em;
 `;
 
-const SubActionLink = styled.a`
+export const SubActionLink = styled(Link)`
     background: none;
     color: ${mainTextColour};
     cursor: pointer;
@@ -145,12 +130,12 @@ const SubActionLink = styled.a`
     }
 `;
 
-const SubActionIcon = styled.i`
+export const SubActionIcon = styled.i`
     color: ${mainTextColour};
     font-size: 1em;
 `;
 
-const fadeIn = keyframes`
+export const fadeIn = keyframes`
     from {
         background: rgba(0, 0, 0, 0.4);
     }
@@ -160,7 +145,7 @@ const fadeIn = keyframes`
     }
 `;
 
-const VideoBackdrop = styled.div`
+export const VideoBackdrop = styled.div`
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -172,7 +157,7 @@ const VideoBackdrop = styled.div`
     animation: ${fadeIn} 1s ease-in forwards;
 `;
 
-const VideoBg = styled.video`
+export const VideoBg = styled.video`
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -182,28 +167,6 @@ const VideoBg = styled.video`
     z-index: -2;
 `;
 
-const HomeContainer = styled(Container)`
+export const HomeContainer = styled(Container)`
     background: none;
 `;
-
-export {
-    AttentionGrab,
-    Details,
-    NextBtnContainer,
-    FilmTitleIconContainer,
-    Logo,
-    LogoMobile,
-    SubFilmTitle,
-    CastRowContainer,
-    LabeledCast,
-    CastLabel,
-    Cast,
-    ActionWrapper,
-    MainActionLink,
-    MainActionIcon,
-    SubActionLink,
-    SubActionIcon,
-    VideoBackdrop,
-    VideoBg,
-    HomeContainer,
-};

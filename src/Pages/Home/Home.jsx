@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Bg2Container, BgContainer, DefaultLinkBtn } from 'Styles/base';
 import { paths } from 'Constants/paths';
 import { Default, Mobile } from 'Components/Responsive.jsx';
 import homeVideo from 'Assets/videos/poster.mp4';
 import logo from 'Assets/images/logo.svg';
 import {
-    AttentionGrab,
-    Details,
-    NextBtnContainer,
     FilmTitleIconContainer,
     Logo,
     LogoMobile,
@@ -26,7 +22,6 @@ import {
     SubActionLink,
     SubActionIcon,
 } from './styled';
-import YouTube from 'react-youtube';
 
 class Home extends Component {
     onReady = event => {
@@ -89,74 +84,23 @@ class Home extends Component {
                             </LabeledCast>
                         </CastRowContainer>
                         <ActionWrapper>
-                            <MainActionLink
-                                href="https://www.youtube.com/watch?v=BU0Aoo4pHYg"
-                                target="_blank"
-                            >
+                            <MainActionLink to={paths.episodes}>
                                 <MainActionIcon className="material-icons">
                                     play_circle_outline
                                 </MainActionIcon>
                                 &nbsp;
-                                <FormattedMessage id="watchLatestEpisode" />
+                                <FormattedMessage id="watchEpisodes" />
                             </MainActionLink>
-                            <SubActionLink
-                                href="https://www.youtube.com/watch?v=_w_cUYvG3x0"
-                                target="_blank"
-                            >
+                            <SubActionLink to={paths.blog}>
                                 <SubActionIcon className="material-icons">
-                                    play_circle_outline
+                                    history_edu
                                 </SubActionIcon>
                                 &nbsp;
-                                <FormattedMessage id="watchPilotEpisode" />
+                                <FormattedMessage id="seeUpdates" />
                             </SubActionLink>
                         </ActionWrapper>
                     </FilmTitleIconContainer>
                 </HomeContainer>
-                <BgContainer id="PilotEpisode">
-                    <AttentionGrab>
-                        <FormattedMessage id="details.pilotEpisode" />
-                    </AttentionGrab>
-                    <YouTube
-                        videoId="_w_cUYvG3x0"
-                        onReady={this.onReady}
-                        className="youtubePlayer"
-                    />
-                </BgContainer>
-                <Bg2Container>
-                    <AttentionGrab>
-                        <FormattedMessage id="details.introduction" />
-                    </AttentionGrab>
-                    <Details>
-                        <FormattedMessage id="details.introduction1" />
-                        <br />
-                        <br />
-                        <FormattedMessage id="details.introduction2" />
-                        &nbsp;
-                        <FormattedMessage id="details.introduction3" />
-                        <br />
-                        <br />
-                        <FormattedMessage id="details.introduction4" />
-                    </Details>
-                </Bg2Container>
-                <BgContainer>
-                    <AttentionGrab>
-                        <FormattedMessage id="details.story" />
-                    </AttentionGrab>
-                    <Details>
-                        <FormattedMessage id="details.story1" />
-                        <br />
-                        <br />
-                        <FormattedMessage id="details.story2" />
-                        <br />
-                        <br />
-                        <FormattedMessage id="details.story3" />
-                    </Details>
-                    <NextBtnContainer>
-                        <DefaultLinkBtn to={paths.about}>
-                            <FormattedMessage id="details.viewMore" />
-                        </DefaultLinkBtn>
-                    </NextBtnContainer>
-                </BgContainer>
             </>
         );
     }

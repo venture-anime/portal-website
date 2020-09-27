@@ -41,6 +41,19 @@ export const Bg2Container = styled(BgContainer)`
     background-image: url(${background2});
 `;
 
+// テキスト
+
+export const Header = styled.div`
+    font-size: 3em;
+    margin-top: ${NAV_HEIGHT_PX}px;
+    margin-bottom: 1em;
+    color: ${subTextColour};
+
+    @media only screen and (max-width: 767px) {
+        margin-top: 40px;
+    }
+`;
+
 // ボタン
 
 export const TextBtn = styled.button`
