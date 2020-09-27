@@ -6,51 +6,32 @@ import {
     CHARACTER_VOICE,
     CHARACTERS,
 } from 'Constants/character';
-import { Bg2Container, BgContainer, DefaultLinkBtn } from 'Styles/base';
+import { BgContainer, Header } from 'Styles/base';
 
 import set from 'Assets/images/set.jpg';
 import { Default, Mobile } from 'Components/Responsive.jsx';
 import {
-    CharacterLabel,
+    AttentionGrab,
+    CharacterImage,
     CharacterListContainer,
     CharacterListContainerMobile,
-    CharacterImage,
     CharacterProfile,
+    CharacterProfilesContainer,
     CharacterProfileSection,
+    Details,
+    Furigana,
+    JobTitle,
     MultiSectionContainer,
     Name,
-    Furigana,
     Physical,
-    JobTitle,
-    ProfileLabel,
     ProfileDetails,
-    SetDesignLabel,
+    ProfileLabel,
     SetDesignImage,
-    CharacterProfilesContainer,
-    AttentionGrab,
-    Details,
-    NextBtnContainer,
+    SetDesignLabel,
 } from './styled';
-import { paths } from '../../Constants/paths';
 
 const About = () => (
     <>
-        <Bg2Container>
-            <AttentionGrab>
-                <FormattedMessage id="details.introduction" />
-            </AttentionGrab>
-            <Details>
-                <FormattedMessage id="details.introduction1" />
-                <br />
-                <br />
-                <FormattedMessage id="details.introduction2" />
-                &nbsp;
-                <FormattedMessage id="details.introduction3" />
-                <br />
-                <br />
-                <FormattedMessage id="details.introduction4" />
-            </Details>
-        </Bg2Container>
         <BgContainer>
             <AttentionGrab>
                 <FormattedMessage id="details.story" />
@@ -64,16 +45,11 @@ const About = () => (
                 <br />
                 <FormattedMessage id="details.story3" />
             </Details>
-            <NextBtnContainer>
-                <DefaultLinkBtn to={paths.about}>
-                    <FormattedMessage id="details.viewMore" />
-                </DefaultLinkBtn>
-            </NextBtnContainer>
         </BgContainer>
         <CharacterProfilesContainer>
-            <CharacterLabel>
+            <Header>
                 <FormattedMessage id="about.characters" />
-            </CharacterLabel>
+            </Header>
             {CHARACTERS.map(characterId => {
                 const content = (
                     <>

@@ -22,17 +22,6 @@ export const NextBtnContainer = styled.div`
     margin-top: 2em;
 `;
 
-export const CharacterLabel = styled.div`
-    font-size: 3em;
-    margin-top: ${NAV_HEIGHT_PX * 2}px;
-    margin-bottom: 1em;
-    color: ${subTextColour};
-
-    @media only screen and (max-width: 767px) {
-        margin-top: 80px;
-    }
-`;
-
 export const CharacterListContainer = styled(Container)`
     height: calc(100vh - ${NAV_HEIGHT_PX}px - 10vh);
     flex-direction: row;
