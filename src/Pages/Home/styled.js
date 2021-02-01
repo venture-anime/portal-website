@@ -92,7 +92,7 @@ const MainActionLink = styled.a`
     cursor: pointer;
     transition: 0.1s ease-in;
     text-decoration: none;
-    margin: 0.75em;
+    margin: 0.25em;
     font-size: 1.5em;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -113,7 +113,7 @@ const MainActionLink = styled.a`
 `;
 
 const MainActionIcon = styled.i`
-    color: #ff0000;
+    color: #008000
     font-size: 1.5em;
 `;
 
@@ -186,6 +186,14 @@ const HomeContainer = styled(Container)`
     background: none;
 `;
 
+const MainActionContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.75em;
+`;
+
 export {
     AttentionGrab,
     Details,
@@ -206,4 +214,5 @@ export {
     VideoBackdrop,
     VideoBg,
     HomeContainer,
+    MainActionContainer,
 };

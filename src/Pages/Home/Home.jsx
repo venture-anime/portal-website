@@ -25,6 +25,7 @@ import {
     HomeContainer,
     SubActionLink,
     SubActionIcon,
+    MainActionContainer,
 } from './styled';
 import YouTube from 'react-youtube';
 
@@ -89,25 +90,37 @@ class Home extends Component {
                             </LabeledCast>
                         </CastRowContainer>
                         <ActionWrapper>
-                            <MainActionLink
-                                href="https://www.youtube.com/watch?v=BU0Aoo4pHYg"
-                                target="_blank"
-                            >
-                                <MainActionIcon className="material-icons">
-                                    play_circle_outline
-                                </MainActionIcon>
-                                &nbsp;
-                                <FormattedMessage id="watchLatestEpisode" />
-                            </MainActionLink>
+                            <MainActionContainer>
+                                <MainActionLink
+                                    href="https://webtoons.com/en/challenge/venture/list?title_no=531594"
+                                    target="_blank"
+                                >
+                                    <MainActionIcon className="material-icons">
+                                        read_more
+                                    </MainActionIcon>
+                                    &nbsp;
+                                    <FormattedMessage id="readEnglishManga" />
+                                </MainActionLink>
+                                <MainActionLink
+                                    href="https://alphapolis.co.jp/manga/530938739/848458449"
+                                    target="_blank"
+                                >
+                                    <MainActionIcon className="material-icons">
+                                        read_more
+                                    </MainActionIcon>
+                                    &nbsp;
+                                    <FormattedMessage id="readJapaneseManga" />
+                                </MainActionLink>
+                            </MainActionContainer>
                             <SubActionLink
-                                href="https://www.youtube.com/watch?v=_w_cUYvG3x0"
+                                href="https://www.youtube.com/playlist?list=PL_xwYIO1BOyWLEzvVuFIjBMvj7bIq0IG5"
                                 target="_blank"
                             >
                                 <SubActionIcon className="material-icons">
                                     play_circle_outline
                                 </SubActionIcon>
                                 &nbsp;
-                                <FormattedMessage id="watchPilotEpisode" />
+                                <FormattedMessage id="subCallToAction" />
                             </SubActionLink>
                         </ActionWrapper>
                     </FilmTitleIconContainer>

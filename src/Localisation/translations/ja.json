@@ -1,9 +1,10 @@
 {
     "title": "ベンチャー",
     "subtitle": "アニメシリーズ",
-    "homeSubtitle": "東京を舞台にした世界初の国際テック会社日常アニメ",
-    "watchPilotEpisode": "パイロット版をご覧",
-    "watchLatestEpisode": "エピソード1.1をご覧",
+    "homeSubtitle": "東京を舞台にした国際テック会社のアニメ・漫画",
+    "subCallToAction": "アニメのエピソードをご覧",
+    "readEnglishManga": "漫画をご覧（日本語）",
+    "readJapaneseManga": "漫画をご覧（英語）",
     "projectUpdates": "エピソード1.1制作の進行状況をご覧",
     "checkOutKickstarterPage": "Kickstarterでシリーズの制作を支援しましょう",
     "releaseDate": "第一話の目的のリリース: 2020年5月",
