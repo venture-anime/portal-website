@@ -102,7 +102,7 @@ class Home extends Component {
                                     <FormattedMessage id="readEnglishManga" />
                                 </MainActionLink>
                                 <MainActionLink
-                                    href="https://alphapolis.co.jp/manga/530938739/848458449"
+                                    href="https://www.pixiv.net/user/34095064/series/115959"
                                     target="_blank"
                                 >
                                     <MainActionIcon className="material-icons">
@@ -130,7 +130,7 @@ class Home extends Component {
                         <FormattedMessage id="details.pilotEpisode" />
                     </AttentionGrab>
                     <YouTube
-                        videoId="_w_cUYvG3x0"
+                        videoId="VIANLddo-ec"
                         onReady={this.onReady}
                         className="youtubePlayer"
                     />
