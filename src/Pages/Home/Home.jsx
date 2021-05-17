@@ -130,7 +130,7 @@ class Home extends Component {
                         <FormattedMessage id="details.pilotEpisode" />
                     </AttentionGrab>
                     <YouTube
-                        videoId="VIANLddo-ec"
+                        videoId="_w_cUYvG3x0"
                         onReady={this.onReady}
                         className="youtubePlayer"
                     />
